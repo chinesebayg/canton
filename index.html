@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-HK">
 <head>
-  <meta charset="UTF-8">
-  <title>中文转粤拼</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中文转粤拼工具</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>中文转粤拼</h1>
-    <textarea id="inputText" placeholder="请输入中文"></textarea>
-    <button onclick="convertToJyutping()">转换</button>
-    <div id="outputText"></div>
-  </div>
-  <script src="script.js"></script>
+    <div class="container">
+        <h1>中文转粤拼工具</h1>
+        <p>输入中文文字，自动转换为粤语拼音（支持简体字自动转换）</p>
+        
+        <div class="input-section">
+            <label for="inputText">输入中文：</label>
+            <textarea id="inputText" placeholder="请输入中文文字（支持简体字和繁体字）..." rows="4"></textarea>
+        </div>
+        
+        <button onclick="convertToJyutping()">转换</button>
+        
+        <div class="output-section">
+            <label for="outputText">粤拼输出：</label>
+            <div id="outputText" class="output-text"></div>
+        </div>
+        
+        <div class="info">
+            <p>词库包含超过6万个词条，支持常用中文词汇转换</p>
+            <p>简体字会自动转换为繁体字后再进行粤拼转换，提高准确性</p>
+        </div>
+    </div>
+    
+    <!-- 引入简体转繁体字典 -->
+    <script src="simplified-to-traditional.js"></script>
+    <!-- 引入扩展的粤拼词典 -->
+    <script src="jyutping-dict-expanded.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
