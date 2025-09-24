@@ -62,8 +62,6 @@ textarea:focus {
 }
 
 button {
-    display: block;
-    width: 100%;
     padding: 15px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -73,7 +71,18 @@ button {
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 10px 5px;
+    flex: 1;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
     margin: 25px 0;
+}
+
+.button-group button {
+    margin: 0;
 }
 
 button:hover {
@@ -96,6 +105,39 @@ button:active {
     color: #2d3748;
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+/* 汉字和粤拼显示样式 */
+.char-above, .char-below {
+    display: inline-block;
+    margin: 0 8px 15px 0;
+    text-align: center;
+    vertical-align: top;
+}
+
+.char-above {
+    flex-direction: column;
+}
+
+.char-below {
+    flex-direction: column-reverse;
+}
+
+.character {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 2px 0;
+}
+
+.jyutping {
+    display: block;
+    font-size: 14px;
+    color: #667eea;
+    font-weight: 500;
+    margin: 2px 0;
+    min-height: 18px;
 }
 
 .info {

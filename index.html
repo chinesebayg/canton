@@ -16,7 +16,10 @@
             <textarea id="inputText" placeholder="请输入中文文字（支持简体字和繁体字）..." rows="4"></textarea>
         </div>
         
-        <button onclick="convertToJyutping()">转换</button>
+        <div class="button-group">
+            <button onclick="convertToJyutping()">转换</button>
+            <button id="toggleButton" onclick="toggleCharacterPosition()">汉字在粤拼底下</button>
+        </div>
         
         <div class="output-section">
             <label for="outputText">粤拼输出：</label>
