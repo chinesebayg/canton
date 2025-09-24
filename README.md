@@ -63,7 +63,7 @@
 ## 🤝 贡献
 
 欢迎提交 Issue 和 Pull Request 来改进这个项目！
-
+jyutping-dict-expanded.js created with Trae.ai IDE from https://words.hk/faiman/analysis/wordslist/?utm_source=chatgpt.com
 ---
 
 **Learn Cantonese With Jyutping** 🇭🇰
